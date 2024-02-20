@@ -28,7 +28,7 @@
       padding: 14px 20px;
       text-decoration: none;
       transition: background-color 0.3s; /* Adding animation */
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif; /* Setting font to Roboto */
     }
     
     .navbar a:hover {
@@ -49,6 +49,22 @@
       font-size: 36px;
       font-weight: bold;
     }
+
+    /* Style for content section */
+    .content-section {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif; /* Setting font to Roboto */
+    }
+
+    /* Style for divider */
+    .divider {
+      height: 2px;
+      background-color: white;
+      margin-left: -3px; /* Cut off at the left */
+      margin-right: -3px; /* Cut off at the right */
+    }
   </style>
 </head>
 <body>
@@ -60,10 +76,14 @@
 </div>
 
 <div class="title-section">
-  <h1 class="title">home</h1>
+  <h1 class="title">Welcome to My Website</h1>
 </div>
 
-<!-- Content goes here -->
+<div class="divider"></div>
+
+<div class="content-section">
+  <p>This is the content section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel arcu nec leo varius congue.</p>
+</div>
 
 </body>
 </html>
