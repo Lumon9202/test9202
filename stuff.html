@@ -52,10 +52,26 @@
 
     /* Style for content section */
     .content-section {
-      background-color: black;
       color: white;
       padding: 20px;
       font-family: 'Roboto', sans-serif; /* Setting font to Roboto */
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Changed to auto-fill */
+      grid-gap: 10px; /* Reduced gap between items */
+    }
+
+    .content-item {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content-item p {
+      margin-top: 10px;
     }
 
     /* Style for divider */
@@ -64,6 +80,11 @@
       background-color: white;
       margin-left: -3px; /* Cut off at the left */
       margin-right: -3px; /* Cut off at the right */
+    }
+
+    /* Set background of whole webpage to black */
+    body {
+      background-color: black;
     }
   </style>
 </head>
@@ -76,13 +97,32 @@
 </div>
 
 <div class="title-section">
-  <h1 class="title">stuff</h1>
+  <h1 class="title">Stuff</h1>
 </div>
 
 <div class="divider"></div>
 
 <div class="content-section">
-  <p>this is the content section. lorem ipsum dolor sit amet, consectetur adipiscing elit. nulla vel arcu nec leo varius congue.</p>
+  <div class="content-item">
+    <img src="placeholder.jpg" alt="Placeholder Image">
+    <p>placeholder</p>
+  </div>
+  <div class="content-item">
+    <img src="placeholder.jpg" alt="Placeholder Image">
+    <p>placeholder</p>
+  </div>
+  <div class="content-item">
+    <img src="placeholder.jpg" alt="Placeholder Image">
+    <p>placeholde</p>
+  </div>
+  <div class="content-item">
+    <img src="placeholder.jpg" alt="Placeholder Image">
+    <p>placeholde</p>
+  </div>
+  <div class="content-item">
+    <img src="placeholder.jpg" alt="Placeholder Image">
+    <p>placeholder</p>
+  </div>
 </div>
 
 </body>
